@@ -1,0 +1,61 @@
+$lilghtGreen: #b9e7e7;
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  .container {
+    //LOGIN & REGISTER
+
+    .auth {
+      display: flex;
+      flex-direction: column;
+      font-display: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: $lilghtGreen;
+    }
+    h1 {
+      font-size: 20px;
+      color: teal;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: white;
+      gap: 20px;
+
+      input {
+        padding: 10px;
+        border:none;
+        border-bottom: 1px solid gray;
+      }
+
+      button{
+        padding:10px;
+        border: none;
+        background-color: teal;
+        cursor: pointer;
+        color:white;
+      }
+      p{
+        font-size:12px;
+        color:red;
+        text-align: center;
+
+
+      }
+      span{
+        font-size: 12px;
+        text-align: center;
+      }
+
+    }
+  }
+}
