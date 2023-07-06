@@ -6,7 +6,12 @@ $lilghtGreen: #b9e7e7;
 }
 
 .app {
+  display: flex;
+  justify-content: center;
   .container {
+    width: 1024px;
+    
+
     //LOGIN & REGISTER
 
     .auth {
@@ -33,29 +38,86 @@ $lilghtGreen: #b9e7e7;
 
       input {
         padding: 10px;
-        border:none;
+        border: none;
         border-bottom: 1px solid gray;
       }
 
-      button{
-        padding:10px;
+      button {
+        padding: 10px;
         border: none;
         background-color: teal;
         cursor: pointer;
-        color:white;
+        color: white;
       }
-      p{
-        font-size:12px;
-        color:red;
+      p {
+        font-size: 12px;
+        color: red;
         text-align: center;
-
-
       }
-      span{
+      span {
         font-size: 12px;
         text-align: center;
       }
+    }
+  }
 
+  //navbar
+  .navbar {
+    .container {
+      width: 1024px;
+      padding: 10px 0px;
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        img {
+          width: 120px;
+          border-radius: 50%;
+        }
+      }
+
+      .links {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        gap: 10px;
+
+        h6 {
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          .link {
+            background-color: #b9e7e7;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  //FOOTER
+  footer {
+    margin-top: 100px;
+    padding: 20px;
+    background:$lilghtGreen ;
+    display:flex;
+    align-items: center;
+    justify-content: cener;
+    font-size: 12px;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
     }
   }
 }
