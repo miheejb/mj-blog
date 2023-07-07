@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Photo from "../assets/miheejeong.png";
 
 const Home = () => {
 
@@ -7,7 +8,7 @@ const posts = [
     id: 1,
     title: "Lorem ipsum dolor sit amet conseteteur",
     desc: "Lorem ipsum dolor sit amet conseteteur",
-    img: "https://www.pexels.com/photo/arch-formation-17390197/",
+    img: {Photo},
   },
   {
     id: 2,
@@ -36,11 +37,13 @@ const posts = [
     {posts.map((post) => (
         <div className="post" key={post.id}>
             <div className="img">
-                <img src="{post.img}" alt="" />
+                <img src={Photo} alt="" />
             </div>
             <div className="content">
-                <Link to={`/post/${post.id}`}>
+                <Link className="link" to={`/post/${post.id}`}>
                     <h1>{post.title}</h1>
+                    <p>{post.desc}</p>
+                    <button>Read More</button>
                 </Link>
             </div>
         </div>
